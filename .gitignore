@@ -1,0 +1,9 @@
+.env
+fastapi-venv/
+__pycache__/
+*.pyc
+instance/
+*.sqlite3
+.DS_Store
+.vscode/
+.idea/

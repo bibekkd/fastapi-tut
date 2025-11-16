@@ -1,0 +1,30 @@
+from pydantic import BaseModel
+from typing import List, Optional
+
+class Blog(BaseModel):
+    title: str
+    body: str
+
+class User(BaseModel):
+    username: str
+    email: str
+    password: str
+
+    class Config:
+        orm_mode = True
+
+class ShowUser(BaseModel):
+    username: str
+    email: str
+    blogs: list[Blog] = []
+
+    class Config:
+        orm_mode = True 
+
+class ShowBlog(Blog):
+    title: str
+    body: str
+    creator: ShowUser
+    
+    class Config:
+        orm_mode = True
