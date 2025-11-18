@@ -7,3 +7,4 @@ passlib[bcrypt]
 bcrypt
 dotenv
 python-jose[cryptography]
+python-multipart
