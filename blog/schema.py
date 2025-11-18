@@ -11,7 +11,7 @@ class User(BaseModel):
     password: str
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 class ShowUser(BaseModel):
     username: str
@@ -19,7 +19,7 @@ class ShowUser(BaseModel):
     blogs: list[Blog] = []
 
     class Config:
-        orm_mode = True 
+        from_attributes = True 
 
 class ShowBlog(Blog):
     title: str
@@ -27,7 +27,7 @@ class ShowBlog(Blog):
     creator: ShowUser
     
     class Config:
-        orm_mode = True 
+        from_attributes = True 
 
 class Login(BaseModel):
     username: str
