@@ -1,4 +1,4 @@
-git clone https://github.com/your-username/fastapi-learning.git
+git clone https://github.com/bibekkd/fastapi-learning.git
 ## **FastAPI Learning Project**
 
 A concise, hands-on FastAPI example project demonstrating core concepts: routing, validation, SQLAlchemy models, and user management.
